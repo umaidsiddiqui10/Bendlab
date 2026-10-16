@@ -7,7 +7,8 @@ Model: first-order tropic drive with a sensing lag and a saturating rate.
     dtheta/dt   = r_clipped
 
 Two states: theta (stem angle, degrees) and r (bend rate, degrees/hour).
-k is per hour, tau and t in hours, max_rate in degrees/hour.
+k is in degrees/hour (the stimulus is expressed as a target bend rate,
+so k carries the rate's units), tau and t in hours, max_rate in degrees/hour.
 
 Why two states: with r alone proportional to the stimulus the plant bends
 fastest at t=0 and only ever decelerates. Measured curves start flat, speed

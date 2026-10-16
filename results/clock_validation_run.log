@@ -1,0 +1,63 @@
+A ZT9-1 free-clock RMSE 3.20 (Umaid 3.20) a=0.90 phase=7.6 (1s)
+A ZT9-2 free-clock RMSE 1.80 (Umaid 1.80) a=0.90 phase=8.0 (2s)
+A ZT9-3 free-clock RMSE 0.86 (Umaid 0.86) a=0.81 phase=9.3 (3s)
+A ZT9-4 free-clock RMSE 1.01 (Umaid 1.01) a=0.35 phase=8.4 (3s)
+A ZT9-5 free-clock RMSE 0.84 (Umaid 0.84) a=0.33 phase=10.7 (4s)
+A ZT9-6 free-clock RMSE 1.20 (Umaid 1.20) a=0.90 phase=9.7 (4s)
+B round 0 shared a=0.484 phase=8.07 (37s)
+B round 1 shared a=0.468 phase=8.14 (60s)
+B ZT9-1 held-out shared-clock RMSE 4.85 vs static 6.76 (61s)
+B ZT9-2 held-out shared-clock RMSE 3.07 vs static 4.83 (61s)
+B ZT9-3 held-out shared-clock RMSE 1.60 vs static 2.89 (62s)
+B ZT9-4 held-out shared-clock RMSE 1.12 vs static 1.95 (62s)
+B ZT9-5 held-out shared-clock RMSE 0.89 vs static 1.20 (63s)
+B ZT9-6 held-out shared-clock RMSE 1.28 vs static 1.38 (64s)
+{
+  "runtime_seconds": 64.4,
+  "shared_clock_fitted_without_ZT9": {
+    "a": 0.46840514159426266,
+    "phase": 8.141970738204263
+  },
+  "ZT9_median_rmse": {
+    "static": 2.4197848056814903,
+    "free_clock_um_reported": 1.105,
+    "shared_clock_heldout": 1.4391918789867764
+  },
+  "training_blocks_median_rmse": {
+    "static": 1.7816897175229038,
+    "shared_clock_in_sample": 2.0049292186453522
+  },
+  "per_plant": [
+    {
+      "plant": "ZT9-1",
+      "static_rmse": 6.759379033736394,
+      "shared_clock_rmse_heldout": 4.853146300601134
+    },
+    {
+      "plant": "ZT9-2",
+      "static_rmse": 4.83441321413174,
+      "shared_clock_rmse_heldout": 3.074252874470361
+    },
+    {
+      "plant": "ZT9-3",
+      "static_rmse": 2.8866428956542487,
+      "shared_clock_rmse_heldout": 1.6016383831999879
+    },
+    {
+      "plant": "ZT9-4",
+      "static_rmse": 1.952926715708732,
+      "shared_clock_rmse_heldout": 1.1248159651575484
+    },
+    {
+      "plant": "ZT9-5",
+      "static_rmse": 1.1998215910411267,
+      "shared_clock_rmse_heldout": 0.8909730918529716
+    },
+    {
+      "plant": "ZT9-6",
+      "static_rmse": 1.3843638033728862,
+      "shared_clock_rmse_heldout": 1.2767453747735646
+    }
+  ]
+}
+saved results/figures/clock_validation_dashboard.png

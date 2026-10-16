@@ -1,0 +1,48 @@
+{
+  "runtime_seconds": 79.9,
+  "shared_clock_fitted_without_ZT9": {
+    "a": 0.46840514159426266,
+    "phase": 8.141970738204263
+  },
+  "ZT9_median_rmse": {
+    "static": 2.4197848056814903,
+    "free_clock_um_reported": 1.105,
+    "shared_clock_heldout": 1.4391918789867764
+  },
+  "training_blocks_median_rmse": {
+    "static": 1.7816897175229038,
+    "shared_clock_in_sample": 2.0049292186453522
+  },
+  "per_plant": [
+    {
+      "plant": "ZT9-1",
+      "static_rmse": 6.759379033736394,
+      "shared_clock_rmse_heldout": 4.853146300601134
+    },
+    {
+      "plant": "ZT9-2",
+      "static_rmse": 4.83441321413174,
+      "shared_clock_rmse_heldout": 3.074252874470361
+    },
+    {
+      "plant": "ZT9-3",
+      "static_rmse": 2.8866428956542487,
+      "shared_clock_rmse_heldout": 1.6016383831999879
+    },
+    {
+      "plant": "ZT9-4",
+      "static_rmse": 1.952926715708732,
+      "shared_clock_rmse_heldout": 1.1248159651575484
+    },
+    {
+      "plant": "ZT9-5",
+      "static_rmse": 1.1998215910411267,
+      "shared_clock_rmse_heldout": 0.8909730918529716
+    },
+    {
+      "plant": "ZT9-6",
+      "static_rmse": 1.3843638033728862,
+      "shared_clock_rmse_heldout": 1.2767453747735646
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+split,n,k_median_rel_err,tau_median_rel_err,max_rate_median_rel_err,phi0_median_rel_err,phi0_median_abs_err_deg
+full_heldout_clean,12000,0.0207,0.0162,0.4469,0.0176,0.78
+full_heldout_noise1deg,12000,0.2566,0.2665,0.4458,0.2554,10.634
+full_heldout_noise2deg,12000,0.3109,0.3455,0.4504,0.296,11.776
+early12_heldout_clean,12000,0.0395,0.0154,0.4432,0.0359,1.484
+early12_heldout_noise2deg,12000,0.3133,0.4117,0.4305,0.3299,14.644
+full_adaption_test10,10,0.021,0.0223,0.3471,0.0145,1.011
+full_fresh_seed999,2000,0.0202,0.0166,0.4438,0.0178,0.809

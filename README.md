@@ -71,6 +71,21 @@ result.
 | `make_explainer_figures.py` | Construction of the six-panel results summary figure |
 | `real_seedling_sim.py` | Simulations of measured-data parameter sets under alternative light protocols |
 | `zt9_diagnostics.py` | Residual, lag-bound sensitivity and stall-timing analyses for the ZT9 model limitation |
+| `sim_gamma.py` | Model v2 candidate A: simulator with a proprioceptive (autostraightening) term |
+| `sim_clock_gamma.py` | Model v2 candidate B: simulator with circadian gating of sensitivity, optionally combined with the proprioceptive term |
+| `gamma_zt9_test.py` | Evaluation of the proprioceptive candidate on ZT9-1 (negative result) |
+| `clock_validation.py` | In-sample reproduction and shared-clock held-out evaluation of the circadian-gating candidate |
+| `check_model_v2.py` | Regression checks: candidate simulators reduce to `sim.py` exactly at default settings |
+| `vector_stimulus.py`, `vector_batch.py`, `vector_grand_atlas.py` | Multi-source stimulus comparison (physical vs transduced vs circumference-integrated), sensitivity atlas and model-discrimination map |
+| `exp_design.py` | Experimental-design power analysis for discriminating the stimulus models |
+| `phase_a.py` | Leave-one-block-out cross-validation, per-fit parameter uncertainty, and the Fig1B external check |
+| `probe_claude.py` | Stall-locking (circular statistics with permutation tests), overshoot census, and fixed-light-angle refits |
+| `big_sweep.py`, `mega_sweep.py` | Uniform-population degeneracy sweeps at 100,000 and 400,000 plants |
+| `bendlab_visual_simulator.html` | Standalone browser simulator (same integrator; stem outline schematic) |
+| `train_inverse_model.py`, `train_inverse_model_v2.py`, `train_inverse_model_v3.py` | Training of the neural inverse model (curve to parameters); v2 uses 100,000 plants and noise augmentation, v3 is a single any-hour network trained with random observation cutoffs (4 to 24 h) |
+| `bendlab_model_demo.html` | Trained inverse model running in the browser (weights embedded), with validation statistics and a simulator self-check |
+| `bendlab_curve_fitter.html` | Deterministic bounded least-squares curve fitter running in the browser, with identifiability diagnostics |
+| `build_site.py` | Builds the GitHub Pages site in `docs/` (Simulator, Trained model and Curve fitter tabs) from the standalone pages |
 | `make_print_edition.py` | Compilation of the project documents into a dated printable PDF |
 | `docs/EXPLAINER.md` | Project overview |
 | `docs/EXPLAINER_PART2.md` | Overview of the simulation experiments, validation and corrections |
@@ -82,6 +97,17 @@ result.
 | `docs/DATA_CONTRACT.md` | Dataset structure, units, sampling and parsing rules |
 | `data/real/` | Measured dataset; see attribution below |
 | `results/` | Numerical outputs required to reproduce the reported results |
+
+## Interactive figure
+
+An interactive, browser-based figure of the BendLab model (live simulation
+with parameter controls and the max_rate identifiability demonstration) was
+built with [Anima](https://github.com/Garinmckayl/anima) by Natnael Getenew:
+https://anima.arcumet.com/examples/sunflower-bend/sunflower-bend.html
+
+The figure's integrator was reviewed against `sim.py` and found faithful;
+the stem outline in the figure is schematic, with stem angle, bend rate and
+the trajectory chart constituting the model outputs.
 
 ## Reproduction
 
